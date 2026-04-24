@@ -1,71 +1,246 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rossana Arnaboldi</title>
     <link rel="stylesheet" href="stile.css">
 </head>
+
 <body>
-    <!--Header-->
-    <header>
 
-    <!--titolo-->
-        <section class="title">
-            <h2 class="nome">Rossana</h2>
-            <h2 class="cognome">Arnaboldi</h2>
-        </section>
+<!-- HEADER -->
+<header>
 
-<!--menu-->
-        <section class="menu">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Chi sono</a></li>
-                <li><a href="">Progetti</a></li>
-                <li><a href="">Competenze</a></li>
-                <li><a href="">Esperienza</a></li>
-                <li><a href="">Contatti</a></li>
-            </ul>
+    <section class="title">
+        <h2 class="nome">Rossana</h2>
+        <h2 class="cognome">Arnaboldi</h2>
+    </section>
 
-        </section>
-     </header>
-    
-      <!--Hero-->
-     <div class="hero">
-        <p class="hello">CIAO, SONO</p>
-        <h1>Rossana Arnaboldi</h1>
-        <h2>Web Developer</h2>
-        <p>Creo siti web moderni, responsive e funzionali con particolare attenzione all'esperienza utente.</p>
-        <!--bottoni-->
-        <div class="btn">
-            <button class="btn-1"><a href="">Scopri i miei progetti</a></button>
+    <section class="menu">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">Chi sono</a></li>
+            <li><a href="#progetti">Progetti</a></li>
+            <li><a href="#competenze">Competenze</a></li>
+            <li><a href="#esperienza">Esperienza</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+        </ul>
+    </section>
+
+</header>
+
+<!-- HERO -->
+<div class="hero" id="hero">
+
+    <p class="hello">CIAO, SONO</p>
+    <h1>Rossana Arnaboldi</h1>
+    <h2>Web Developer</h2>
+
+    <p>
+        Creo siti web moderni, responsive e funzionali con particolare attenzione all'esperienza utente.
+    </p>
+
+    <!-- BOTTONI (NON MODIFICATI COME CHIESTO) -->
+    <div class="btn">
+        <a href=""><button class="btn-1">Scopri i miei progetti</button></a>
+    </div>
+
+    <div class="btn">
+        <a href=""><button class="btn-2">Contattami</button></a>
+    </div>
+
+</div>
+
+<!-- ABOUT -->
+<div class="about" id="about">
+
+    <div class="immagine">
+        <img src="Immagini/roxy portfolio copia.png" alt="Foto di Rossana Arnaboldi">
+    </div>
+
+    <div class="testo">
+
+        <p class="hello">CHI SONO</p>
+        <h2>Qualcosa su di me</h2>
+        <hr>
+
+        <p>
+            Sono una web developer alle prime armi, con un forte interesse per il design digitale e la creazione di interfacce web.
+            Mi sto formando in HTML, CSS e WordPress.
+            Questo portfolio raccoglie i miei primi lavori.
+        </p>
+
+        <a href="Curriculum Vitae Professionale Semplice Bianco Beige (1) copia.pdf" download target="_blank">
+            <button>Scarica il mio CV</button>
+        </a>
+
+    </div>
+
+</div>
+
+<!-- PROGETTI -->
+<div class="progetti" id="progetti">
+
+    <p class="hello">PROGETTI</p>
+    <h2>I miei progetti</h2>
+    <hr>
+
+    <div class="projects">
+
+        <!-- CARD 1 -->
+        <div class="project">
+
+            <img src="Immagini/Estetista.png" alt="Progetto 1">
+
+            <h3>Sito vetrina</h3>
+
+            <p>
+                Sito vetrina per negozio fittizio di estetica realizzato con WordPress.
+                Design pulito e navigazione intuitiva.
+            </p>
+
+            <div class="row">
+
+                <div class="programmi">
+                    <button class="programma">WordPress</button>
+                    <button class="programma">Elementor</button>
+                </div>
+
+                <a href="pagina.html" class="arrow-only">→</a>
+
+            </div>
+
         </div>
-        <div class="btn">
-            <button class="btn-2"><a href="">Contattami</a></button>
+
+        <!-- CARD 2 -->
+        <div class="project">
+
+            <img src="Immagini/Roxyshop.png" alt="Progetto 2">
+
+            <h3>E-commerce</h3>
+
+            <p>
+                E-commerce fittizio realizzato con WordPress per simulare la vendita online di prodotti.
+            </p>
+
+            <div class="row">
+
+                <div class="programmi">
+                    <button class="programma">WordPress</button>
+                    <button class="programma">Elementor</button>
+                    <button class="programma">WooCommerce</button>
+                </div>
+
+                <a href="pagina.html" class="arrow-only">→</a>
+
+            </div>
+
         </div>
-     </div>
 
-     <!--About-->
-     <div class="about">
-        <div class="immagine">
-            <img src="Immagini/roxy portfolio copia.png" alt="Foto di Rossana Arnaboldi ">
+        <!-- CARD 3 -->
+        <div class="project">
+
+            <img src="Immagini/Estetista.png" alt="Progetto 3">
+
+            <h3>Portfolio personale</h3>
+
+            <p>
+                Portfolio sviluppato in HTML e CSS per presentare competenze e progetti.
+            </p>
+
+            <div class="row">
+
+                <div class="programmi">
+                    <button class="programma">HTML</button>
+                    <button class="programma">CSS</button>
+                </div>
+
+                <a href="pagina.html" class="arrow-only">→</a>
+
+            </div>
+
         </div>
 
-        <div class="testo">
-             <p class="hello">CHI SONO</p>
-             <h2>Qualcosa su di me</h2>
-             <hr>
-            <p>Sono una web developer alle prime armi, con un forte interesse per il design digitale e la creazione di interfacce web.
-Mi sto formando nelle tecnologie fondamentali come HTML, CSS e WordPress, sviluppando le mie competenze passo dopo passo.
-Mi appassiona trasformare idee in layout chiari, ordinati e visivamente efficaci.
-Questo portfolio raccoglie i miei primi lavori e progetti di esercitazione.
-Sono una persona curiosa, precisa e orientata alla crescita continua.
-Il mio obiettivo è costruire solide competenze nello sviluppo web e lavorare su progetti sempre più strutturati.</p>
+    </div>
 
-<a href="Curriculum Vitae Professionale Semplice Bianco Beige (1) copia.pdf" download target="_blank">
-  <button>Scarica il mio CV</button>
-</a>
-     </div>
-    
+</div>
+
+<!-- COMPETENZE -->
+<div class="competenze" id="competenze">    
+     <p class="hello">COMPETENZE</p>
+    <h2>Competenze</h2>
+    <hr>
+<!-- Contenitore generale competenze -->
+   <div class="skills">
+
+    <!-- Divisione competenze per categorie -->
+     <div class="skill-category">
+        <h3>Linguaggi</h3>
+        <div class="competenza">
+            <img src="Immagini/immagini senza attribuzone/html-5-svgrepo-com.svg" alt="html icona ">
+            <p>HTML</p>
+        </div>
+
+        <div class="competenza">
+            <img src="Immagini/immagini senza attribuzone/css-svgrepo-com.svg" alt="css icona ">
+            <p>CSS</p>
+        </div>
+
+         <div class="competenza">
+            <img src="Immagini/immagini senza attribuzone/php-svgrepo-com.svg" alt="php icona ">
+            <p>PHP</p>
+        </div>
+   </div>
+
+    <div class="skill-category">
+        <h3>Framework</h3>
+        <div class="competenza">
+            <img src="Immagini/immagini senza attribuzone/laravel-svgrepo-com.svg" alt="html icona ">
+            <p>LARAVEL</p>
+        </div>
+    </div>
+
+         <div class="skill-category">
+        <h3>CMS</h3>
+        <div class="competenza">
+            <img src="Immagini/immagini senza attribuzone/wordpress-svgrepo-com.svg" alt="html icona ">
+            <p>WordPress</p>
+        </div>
+    </div>
+     <div class="skill-category">
+        <h3>Software</h3>
+        <div class="competenza">
+            <img src="Immagini/immagini senza attribuzone/adobe-dreamweaver-svgrepo-com.svg" alt="html icona ">
+            <p>Adobe Dreamweaver</p>
+        </div>
+    </div>
+
+         <div class="skill-category">
+        <h3>Builder</h3>
+        <div class="competenza">
+            <img src="Immagini/immagini senza attribuzone/brand-elementor-svgrepo-com.svg" alt="html icona ">
+            <p>Elementor</p>
+        </div>
+        <div class="competenza">
+            <img src="Immagini/immagini senza attribuzone/woocommerce-logo-svgrepo-com.svg" alt="html icona ">
+            <p>WooCommerce</p>
+        </div>
+
+    </div>
+     <div class="skill-category">
+        <h3>Version Control</h3>
+        <div class="competenza">
+            <img src="Immagini/immagini senza attribuzone/github-142-svgrepo-com.svg" alt="html icona ">
+            <p>GitHub</p>
+        </div>
+    </div>
+  
+
+
+   
+</div>
+
 </body>
 </html>
