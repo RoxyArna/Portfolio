@@ -371,7 +371,7 @@ h2.cognome{
     justify-content: center;
     width: 100%;
     flex-wrap: wrap; /* invece di nowrap */
-    align-items: stretch; /* 🔥 fondamentale */
+    align-items: stretch; /*  fondamentale */
 }
 
 
@@ -381,7 +381,7 @@ h2.cognome{
     align-items: center;
 
     width: 150px; /* meglio fisso invece di 15% */
-    height: 150px; /* 🔥 tutte stessa altezza */
+    height: 150px; /*  tutte stessa altezza */
 
     background-color: #f0f0f0;
     border-radius: 10px;
@@ -430,6 +430,7 @@ footer{
     padding: 20px;
     background-color: #232932;
     color: white;
+    padding-left: 50px;
 }
 
 /* contenitore principale */
@@ -445,7 +446,7 @@ footer{
 
 /* colonne uguali */
 .contattami,
-.form,
+.navigazone,
 .social{
     flex: 1;
 }
@@ -474,18 +475,49 @@ footer hr{
     margin-top: 15px;
     display: flex;
     align-items: center;
+    gap: 130px;
+}
+.p1 a {
+    color:white;
+    display: flex;
+    align-items: center;
     gap: 10px;
+    text-decoration: none;
+
 }
 
+.p1 a:hover{
+   color: #ADA6EF;;
+}
 .p1 img{
     width: 20px;
     height: auto;
 }
 
-.p1 p{
-    margin: 0;
+/*Navigazione*/
+.navigazione{
+    display: flex;
+    flex-direction: column;
+     gap: 15px;
+    flex:0.5;
+}
+.navigazione a {
+    color: white;
+    text-decoration: none;
+    
 }
 
+.navigazione a:hover{
+    color: #ADA6EF;
+    
+}
+
+.navigazione ul{
+    list-style: none;
+}
+.navigazione ul li {
+    margin-bottom: 4px;
+}
 /* SOCIAL */
 .social{
     display: flex;
