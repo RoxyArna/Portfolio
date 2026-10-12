@@ -362,7 +362,8 @@ hr {
 }
 
 .skills {
-  display: flex;
+  display: grid;
+ grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 30px;
   justify-content: center;
   width: 100%;
@@ -371,11 +372,14 @@ hr {
 }
 
 .skill-category {
+    width: 100%;
+    min-width: 0;
+    min-height: 190px;
+    height: auto;
   display: flex;
   flex-direction: column;
   align-items: left;
-  width: 150px;
-  height: 190px;
+  
   background-color: #f0f0f0;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -458,6 +462,13 @@ footer hr {
   gap: 10px;
   flex: 0.5;
 }
+.contattami hr,.navigazione hr,.social hr {
+    margin-top: 0;
+    margin-bottom: 15px;
+    width: 20%;
+    margin-left: 0;
+    margin-right: auto;
+}
 
 /* righe contatti */
 .p1 {
@@ -495,6 +506,7 @@ footer hr {
   align-items: center;
   gap: 10px;
   text-decoration: none;
+
 }
 
 .navigazione a:hover {
@@ -656,6 +668,15 @@ footer hr {
   background-color: #ada6ef;
   transform: scale(1.1);
 }
+@media (max-width:828px){
+    .competenza{
+    justify-content: center;
+  }
+  .competenza p{
+    display: none;
+  }
+
+}
 
 /*Telefono*/
 @media (max-width: 730px) {
@@ -720,6 +741,13 @@ footer hr {
   .skill-category {
     width: 100%;
     max-width: 150px;
+    
+  }
+  .competenza{
+    justify-content: center;
+  }
+  .competenza p{
+    display: none;
   }
   
     /* FOOTER: diventa verticale */
