@@ -9,6 +9,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    
 }
 
 img {
@@ -202,13 +203,14 @@ h2 {
   font-size: 50px;
   color: #333;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 hr {
-  width: 50px;
+  width: 100px;
   border: solid 2px #877ee1;
   border-radius: 10px;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 20px;
 }
 
@@ -216,6 +218,8 @@ hr {
   font: size 18px;
   line-height: 1.5;
   color: #333;
+  max-width: 500px;
+  flex-direction: column;
 }
 .about a {
   margin: 0;
@@ -236,7 +240,23 @@ hr {
   transition: all 0.5s ease;
   transform: scale(1.05);
 }
+@media(max-width:931px){
+  .about {
+    padding: 20px;
+    text-align: center;
+    flex-wrap: wrap-reverse;
+  }
+  .about hr {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  .about img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+}
 /*Progetti*/
 .progetti {
   display: flex;
@@ -462,13 +482,7 @@ footer hr {
   gap: 10px;
   flex: 0.5;
 }
-.contattami hr,.navigazione hr,.social hr {
-    margin-top: 0;
-    margin-bottom: 15px;
-    width: 20%;
-    margin-left: 0;
-    margin-right: auto;
-}
+
 
 /* righe contatti */
 .p1 {
@@ -497,9 +511,12 @@ footer hr {
 .navigazione {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 15px;
   flex: 0.5;
 }
+
 .navigazione a {
   color: white;
   display: flex;
@@ -524,6 +541,8 @@ footer hr {
 .social {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 15px;
   flex: 0.5;
 }
@@ -668,6 +687,17 @@ footer hr {
   background-color: #ada6ef;
   transform: scale(1.1);
 }
+
+.titoliFooter{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: center;
+  
+}
+.titoliFooter hr{
+  width: 100%;
+}
 @media (max-width:828px){
     .competenza{
     justify-content: center;
@@ -680,10 +710,7 @@ footer hr {
 
 /*Telefono*/
 @media (max-width: 730px) {
-    *{
-        margin:0;
-        padding: 0;
-    }
+   
   header {
     flex-direction: column;
     align-items: center;
@@ -736,11 +763,16 @@ footer hr {
 
   .skills {
     gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
   }
 
   .skill-category {
     width: 100%;
     max-width: 150px;
+    
     
   }
   .competenza{
@@ -802,6 +834,7 @@ footer hr {
         display: none;
     }
 */
+
     /* NAVIGAZIONE */
     .navigazione {
       width: 100%;
@@ -809,6 +842,10 @@ footer hr {
       align-items: center;
       justify-content: center;
       gap: 4px;
+    }
+    .navigazione ul{
+      margin: 0px;
+      padding: 0px;
     }
     .navigazione a {
       justify-content: center;
@@ -835,14 +872,8 @@ footer hr {
     padding: 70px 40px;
   }
 
-  .about {
-    padding: 40px;
-    flex-wrap: nowrap;
-  }
-}
-
-@media (max-width: 1024px) {
-  .hamburger {
+  
+   .hamburger {
     display: block;
     font-size: 30px;
     cursor: pointer;
@@ -897,3 +928,5 @@ footer hr {
     margin-bottom: 5px;
   }
 }
+
+
