@@ -355,10 +355,6 @@ const observer = new IntersectionObserver((entries) => {
 
 elements.forEach(el => observer.observe(el));
 
-document.querySelector("form").addEventListener("submit", function(e){
-    alert("Messaggio inviato correttamente!");
-});
-
 const btn = document.querySelector(".back-to-top");
 
 window.addEventListener("scroll", () => {
