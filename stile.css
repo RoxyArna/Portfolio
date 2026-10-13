@@ -868,7 +868,7 @@ footer hr {
 
 
 /*Tablet*/
-@media (min-width: 731px) and (max-width: 1024px) {
+@media  (max-width: 1024px) {
   .hero {
     padding: 70px 40px;
   }
